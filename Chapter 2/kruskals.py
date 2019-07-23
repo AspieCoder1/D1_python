@@ -11,8 +11,8 @@ class Graph:
         self.graph = []  # default dictionary
 
     # function to add an edge to graph
-    def add_edge(self, u, v, w):
-        self.graph.append([u, v, w])
+    def add_edge(self, start, end, weight):
+        self.graph.append([start, end, weight])
 
     # A utility function to find set of an element i
     # (uses path compression technique)

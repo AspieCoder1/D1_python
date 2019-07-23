@@ -11,3 +11,4 @@ This repository contains a python implementation of most of the algorithms that 
 ## Chapter Two
 
 * Kruskals Algorithm (`kruskals.py`)
+* Primm's Algorithm (`primms.py`)
