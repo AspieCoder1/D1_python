@@ -7,3 +7,7 @@ This repository contains a python implementation of most of the algorithms that 
 * Bubble sort (`bubble.py`)
 * Quick sort (`quicksort.py`)
 * First fit decreasing bin packing algorithm (`binpacking.py`)
+
+## Chapter Two
+
+* Kruskals Algorithm (`kruskals.py`)

@@ -5,9 +5,9 @@ def Happy(a):
         total = 0
         split_num = [int(d) for d in str(num)]
         for i in split_num:
-            total += i**2
+            total += i ** 2
         num = total
-        if total ** 2 == a**2:
+        if total ** 2 == a ** 2:
             return '{} is unhappy'.format(a)
     return '{} is happy'.format(a)
 

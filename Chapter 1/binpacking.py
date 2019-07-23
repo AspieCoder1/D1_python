@@ -1,4 +1,4 @@
-class Bin ():
+class Bin():
     def __init__(self):
         self.items = []
         self.sum = 0
@@ -12,7 +12,7 @@ class Bin ():
 
 
 def pack(vals, maxVal):
-    """An implmentation of the first fit decreasing bin packing algorithm"""
+    """An implementation of the first fit decreasing bin packing algorithm"""
     items = sorted(vals, reverse=True)
     bins = []
     for item in items:
@@ -27,13 +27,13 @@ def pack(vals, maxVal):
     return bins
 
 
-def packAndGenSolution(list, maxVal):
+def pack_and_gen_solution(arr, maxVal):
     print('An list with sum %s with max bin value of %s need a minimum of %s bins') % (
-        sum(list), maxVal, (sum(list)/maxVal))
-    bins = pack(list, maxVal)
+        sum(arr), maxVal, (sum(arr) / maxVal))
+    bins = pack(arr, maxVal)
     print('%s bins were needed') % format(len(bins))
     for bin in bins:
         print(bin)
 
 
-packAndGenSolution([8, 7, 14, 9, 6, 9, 5, 15, 6, 7, 8], 20)
+pack_and_gen_solution([8, 7, 14, 9, 6, 9, 5, 15, 6, 7, 8], 20)
