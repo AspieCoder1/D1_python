@@ -1,5 +1,5 @@
 """
-A Python implemenation of Kruskals
+A Python implementation of Kruskals
 """
 
 

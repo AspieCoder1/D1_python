@@ -1,7 +1,6 @@
 """
 An implementation of Primm's Algorithm in Python using adjacency matrix
 """
-import sys
 
 
 class Graph:
@@ -18,7 +17,7 @@ class Graph:
         min = 100000000000000
 
         for vertex in range(self.vertices):
-            if key[vertex] < min and mst_set[vertex] == False:
+            if key[vertex] < min and not mst_set[vertex]:
                 min = key[vertex]
                 min_index = vertex
         return min_index
@@ -39,7 +38,7 @@ class Graph:
             for v in range(self.vertices):
                 # Checks not the same node, not already included in MST and updates key value only in connector
                 # and current value is greater than new distance and vertex not in MST
-                if self.graph[u][v] > 0 and mst_set[v] == False and key[v] > self.graph[u][v]:
+                if 0 < self.graph[u][v] < key[v] and not mst_set[v]:
                     key[v] = self.graph[u][v]
                     mst[v] = u
 
