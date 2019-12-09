@@ -87,7 +87,7 @@ class Graph:
         for u, v, weight in result:
             # print str(u) + " -- " + str(v) + " == " + str(weight)
             print("%d -- %d == %d" % (u, v, weight))
-
+        print(f'Total length of minimum spanning tree: {sum([w for u,v,w in result])}')
         # Driver code
 
 
