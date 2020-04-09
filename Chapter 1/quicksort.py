@@ -1,4 +1,6 @@
-def quicksort(arr):
+# During an execution you get a binary tree
+# Hence O(n) = log_2(n)
+def quicksort(arr): 
     lower = []
     equal = []
     higher = []
@@ -11,6 +13,8 @@ def quicksort(arr):
                 equal.append(x)
             if x > pivot:
                 higher.append(x)
+        # Using a recursive function
+        # Whilst you continue to algorithm is executed a binary tree is made
         return quicksort(lower) + equal + quicksort(higher)
     return arr
 
