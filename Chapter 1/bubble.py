@@ -1,8 +1,8 @@
 def bubble(arr):
     print(arr)
-    # Traverses through all elements in the array
+    # Interate through each item in the array
     for i in range(len(arr)):
-        # Traverses through all elements not already sorted
+        # Loop through each item not sorted i.e. when i=0 no items are sorted, i=1 the last item is sorted ect...
         for j in range(len(arr) - i - 1):
             if arr[j] > arr[j + 1]:
                 temp = arr[j]
